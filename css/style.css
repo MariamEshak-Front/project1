@@ -1,0 +1,1089 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color:black;
+    position: fixed;
+    z-index: 20;
+    opacity: 0.9;
+}
+.home-icon {
+    padding-top: 10px;
+    margin-left: 50px;
+    font-size: 25px;
+    color: white;
+}
+.search-box{
+    margin: 10px 0 0 25px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.search-icon{
+    position: absolute;
+    padding-top: 20px;
+    margin-left: -30px;
+    font-size: 18px;
+
+}
+.header-links{
+    float: right;
+    list-style-type: none; 
+    margin-right: 50px;
+    padding-top: 12px;
+    position: relative;
+    
+}
+.header-links li{
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+   
+}
+.header-links li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.header-links li a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;;
+    left: 0;
+    background-color: blue;
+    opacity: 0;
+
+}
+.header-links li a:hover::after{
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+/* ----------------------------------------------------------- */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/home-img\ \(11\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+   
+}
+
+.home-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.445);
+
+}
+.home-contect{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+   
+}
+.home-title{
+    font-family: "Playwrite GB S", cursive;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+.home-p{
+    font-size: 15px;
+    color: #b3b1b1;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 15px 0;
+}
+.home-btn-learn,
+.home-btn-get{
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.home-btn-learn{
+    background-color: white;
+    color: black;
+}
+.home-btn-get{
+    background-color: rgb(76, 76, 230);
+    color: white;
+}
+.home-btn-learn:hover , .home-btn-get:hover{
+    opacity: 0.5;
+}
+/* ------------------------------------------------------------------- */
+
+.continer1{
+    width: 80%;
+    margin: auto;
+}
+.sec1{
+    width: 100%;
+    height: 100vh;
+    overflow:auto;
+}
+.sec1-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 80px;
+    text-transform: capitalize;
+    font-family: "Playwrite GB S", cursive;
+}
+.sec1-line{
+    width: 150px;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+    margin-top: 10px;
+}
+.sec1-div1 , .sec1-div2{
+    width: 40%;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    float: left;
+    margin: 5% ;
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
+   
+}
+
+.sec1-i1{
+    font-size: 40px;
+    color: rgb(55, 55, 218);
+    padding-top: 30px;
+    
+}
+.sec1-h2 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;  
+    padding-top: 10px;
+}
+
+.sec1-p{
+    font-size: 20px;
+    color: rgba(39, 39, 41, 0.575);
+    padding: 20px 0 30px 0;
+    text-transform: capitalize;
+}
+.sec1-link{
+    text-decoration:none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.sec1-div1:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-image: url(../images/cake\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.sec1-div1:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+
+    opacity: 1;
+}
+.sec1-div2:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-image: url(../images/cookies\ \(2\).jpg);
+    background-position: bottom;
+    background-size: cover;
+
+}
+
+.sec1-div2:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+
+    opacity: 1;
+   
+}
+
+/* -------------------------------------------------------------------------- */
+
+.continer2{
+    width: 100%;
+    margin: auto;
+   
+}
+.sec2{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    
+    
+}
+.sec2-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    text-transform: capitalize;
+    font-family: "Playwrite GB S", cursive;
+}
+.sec2-line{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+    margin-top: 10px;
+}
+.sec2-div1,
+.sec2-div2,
+.sec2-div3,
+.sec2-div4,
+.sec2-div5,
+.sec2-div6 {
+    width: 25%;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    float: left;
+    position: relative;
+    
+}
+.sec2-div1{
+    margin-top: 30px;
+    margin-left: 10%;
+
+}
+ .sec2-div2 , .sec2-div3{
+    margin-top: 30px;
+    margin-left: 2.5%;
+}
+.sec2-div4 {
+    margin-top: 10px;
+    margin-left: 10%;
+
+}
+.sec2-div5 , .sec2-div6{
+    margin-top: 10px;
+    margin-left: 2.5%;
+}
+.sec2-div-overlay img{
+    border-radius: 20px;
+}
+.sec2-overlay{
+   
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+    visibility: hidden;
+   
+}
+.sec2-div-overlay:hover  .sec2-overlay{
+    visibility: visible;
+}
+.sec2-h2{
+    padding-top: 30px;
+    text-transform: uppercase;
+    color: #b3b1b1;
+    font-size: 30px;
+
+}
+.sec2-h4{
+    padding: 20px 0 20px 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+}
+.sec2-i1{
+    width: 40px;
+    height: 40px;
+    color: gray;
+    background-color: white;
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+
+.sec3{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    overflow: auto;
+    background-image: url(../images/home-img\ \(10\).jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.sec3-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    text-transform: capitalize;
+    font-family: "Playwrite GB S", cursive;
+    color: rgb(39, 37, 37);
+}
+.sec3-line{
+    width: 100px;
+    height: 4px;
+    background-color: rgb(39, 37, 37);
+    margin: auto;
+    margin-top: 10px;
+}
+.continer3{
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+}
+
+.sec3-div1 {
+    width: 350px;
+    height: 200px;
+    float: left;
+    margin: 30px 0 0 100px;
+    background-color: rgba(255, 255, 255 , 0.7);
+    border-radius: 20px;
+    position: relative;
+}
+
+.sec3-div2,
+.sec3-div3 {
+    width: 350px;
+    height: 200px;
+    float: left;
+    margin: 30px 0 0 50px;
+    background-color: rgba(255, 255, 255 , 0.7);
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.sec3-div4 {
+    width: 350px;
+    height: 200px;
+    float: left;
+    margin: 20px 0 0 100px;
+    background-color: rgba(255, 255, 255 , 0.7);
+    border-radius: 20px;
+    position: relative;
+}
+
+.sec3-div5,
+.sec3-div6 {
+    width: 350px;
+    height: 200px;
+    float: left;
+    margin: 20px 0 0 50px;
+    background-color: rgba(255, 255, 255 , 0.7);
+    border-radius: 20px;
+    position: relative;
+}
+
+.sec3-h1 {
+    float: left;
+    margin-left: 20px;
+    padding-top: 20px;
+    text-transform: capitalize;
+
+}
+
+.sec3-p {
+    float: left;
+    color: rgb(62, 70, 73);
+    padding: 0 20px 0 75px;
+    margin-top: 8px;
+    font-size: 18px;
+    opacity: 0.7;
+}
+.sec3-i {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    float: left;
+}
+
+.sec3-overlay:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    top: 0;
+    right: 0;
+
+   background-color:rgba(0, 0, 0, 0.2);
+   border-radius: 20px;
+
+}
+
+.sec3-overlay:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+
+    opacity: 1;
+    z-index: 1;
+    
+}
+
+.sec3-overlay:hover .sec3-p{
+    color: rgb(0, 0, 0);
+
+}
+
+.sec3-overlay:hover .sec3-h1{
+    color: rgb(68, 100, 206);
+
+}
+
+.sec3-overlay:hover .sec3-i{
+    color: rgb(67, 88, 160);
+
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+.sec4{
+    width: 80%;
+    margin: auto;
+    
+}
+.continer4{
+    height: 100vh;
+    overflow: auto;
+    padding-top: 80px;
+    margin-top: 100px;
+   
+}
+.sec4-div1{
+    float: left;
+    width: 50%;
+   
+}
+.sec4-div2{
+    width: 50%;
+    float: left;
+    padding-left: 180px;
+}
+.sec4-title{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: "Playwrite GB S", cursive;
+}
+.sec4-line{
+    width: 80px;
+    height: 4px;
+    margin-top: 10px;
+    background-color: black;
+   
+}
+.sec4-p{
+    font-size: 15px;
+    padding: 50px 0 ;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, 0.425);
+}
+.sec4-list1{
+    line-height: 50px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.753);
+}
+.sec4-img{
+    border-radius: 20px;
+}
+.sec4-list2{
+    
+    text-align: center;
+    list-style: none;
+}
+.sec4-list2 li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 20px 10px;
+    display: inline-block;
+    background-color: rgb(174, 174, 175);
+
+}
+.sec4-list2 .active {
+    background-color: rgb(103, 103, 235);
+}
+
+/* -------------------------------------------------------- */
+.sec5{
+    width: 100%;
+    height: 65%;
+    margin: 50px 0 100px 0;
+    background-image: url(../images/home-img\ \(12\).jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    position: relative;
+}
+
+.sec5-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.continer5{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+.sec5-content{
+    display: inline-block;
+    width: 22%;
+    height: 100%;
+    margin-left: 2%;
+    text-align: center;
+    padding-top: 20px;  
+}
+.sec5-content .sec5-h3,.sec5-span{
+    font-size: 25px;
+    color: white;
+
+}
+.sec5-content i{
+    font-size: 50px;
+    padding-bottom: 20px;
+    color:  rgb(103, 103, 235);
+}
+
+/* -------------------------------------------------------------- */
+
+.sec6{
+    width: 100%;
+    height: 100vh;
+}
+.sec6-title{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 80px;
+    text-transform: capitalize;
+    font-family: "Playwrite GB S", cursive;
+}
+.sec6-line{
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+    margin-top: 10px;
+}
+.continer6{
+    width: 80%;
+    height: 320px;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+    
+}
+.sec6-div{
+    float: left;
+    border: 1px gray solid;
+    width: 250px;
+    height: 320px;
+    margin-left: 80px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.sec6-h2{
+    padding: 20px 0 20px 0;
+}
+.sec6-circle , .sec6-circle , .sec6-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 30%;
+    border: 2px dashed grey;
+    
+}
+.sec6-circle .sec6-circle-price{
+    font-size: 30px;
+    font-weight: bold;
+    text-align:center;
+    margin-left: 5px;
+    margin-top: 10px;
+    color: rgb(61, 38, 190);
+
+}
+.sec6-circle .sec6-circle-p{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align:center;
+    margin-left: 6px;
+    margin-top: 8px;
+    color: rgb(61, 38, 190);
+}
+.sec6-div .sec6-p{
+    font-size: 15px;
+    padding: 20px 0 ;
+    text-transform:capitalize;
+    text-align: center;
+    line-height: 20px;
+}
+.sec6-btn{
+    width: 150px;
+    height: 30px;
+    background-color:  rgb(79, 91, 196);
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-transform:uppercase;
+}
+.sec6-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.sec6-overlay:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+   background-color: rgba(103, 103, 235,0.5);
+   border-radius: 20px;
+
+}
+
+.sec6-overlay:hover::after{
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.7;
+    z-index: -1;
+       
+}
+
+.sec6-div:hover .sec6-h2{
+    color: rgb(61, 38, 190);
+
+}
+.sec6-div:hover .sec6-circle-price {
+    color: rgb(0, 0, 0);
+
+}
+.sec6-div:hover .sec6-circle-p{
+    color: rgb(0, 0, 0);
+
+}
+/* ------------------------------------------------------------------- */
+.sec7{
+    width: 100%;
+    height: 65%;
+    margin: 50px 0 100px 0;
+    background-image: url(../images/cook.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    position: relative;
+}
+
+.sec7-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.continer7{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.sec7-content{
+    display: inline-block;
+    width: 47%;
+    height: 100%;
+    margin-left: 2%;
+    padding: 20px 0 0 30px;  
+    overflow: auto;
+    color: white;
+}
+.sec7-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size:cover;
+    background-color: gray;
+    float: left;
+    margin: 20px 0 0 10px;
+}
+.sec7-img img{
+    border-radius: 50%;
+}
+.sec7-title{
+    float: left;
+    margin: 20px 0 0 20px ;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: "Playwrite GB S", cursive;
+    line-height: 50px;
+}
+.sec7-p{
+    float: left;
+    margin: 20px 10px 0 20px;
+    text-transform: capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+.sec7-h2{
+    color: white;
+}
+.sec7-h3{
+    color: rgb(0, 183, 219);
+}
+.sec7-p{
+    color: rgb(195, 207, 209);
+}
+/* ------------------------------------------------------------------------------------------- */
+
+.sec8{
+    width: 100%;
+    height: 90%;
+}
+
+.sec8-title{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    text-transform: capitalize;
+    font-family: "Playwrite GB S", cursive;
+}
+.sec8-line{
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+    margin-top: 10px;
+}
+.continer8{
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+}
+.sec8-div{
+    width: 28%;
+    height: 300px;
+    background-color: rgb(223, 221, 221);
+    float: left;
+    margin-left: 4%;
+    padding: 20px 18px 0 18px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+}
+.sec8-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.sec8-img img{
+    width: 100%;
+}
+.sec8-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    visibility: hidden;
+    z-index: 2;
+}
+.sec8-div:hover  .sec8-overlay{
+    visibility: visible;
+}
+
+.sec8-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    color:white;
+    background-color:  rgb(56, 147, 199);
+    margin-left: auto;
+}
+.sec8-overlay a i{
+    line-height: 40px;
+}
+.sec8-info-h2{
+    text-transform: capitalize;
+    padding-top: 20px;
+    color: rgb(43, 40, 40);
+    
+}
+.sec8-div:hover  .sec8-info-h2{
+    color: rgb(121, 116, 116);
+   
+}
+.sec8-info-h4{
+    text-transform: uppercase;
+    padding-top: 10px;
+    color: gray;
+
+}
+.sec8-div:hover  .sec8-info-h4{
+    color: rgb(56, 147, 199);
+    
+}
+
+.sec8-div:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+   background-color: rgba(0, 0, 0, 0.315);
+   border-radius: 20px;
+
+}
+
+.sec8-div:hover::after{
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.7;
+    z-index: 1;
+       
+}
+/* ------------------------------------------------------------------------------ */
+
+.sec9{
+    width: 100%;
+}
+
+.sec9-title{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 60px;
+    text-transform: capitalize;
+    font-family: "Playwrite GB S", cursive;
+}
+.sec9-line{
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+    margin-top: 10px;
+}
+.continer9{
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+.sec9-div{
+    width: 28%;
+    height: 550px;
+    border: 1px solid gray;
+    float: left;
+    margin-left: 4%;
+    padding: 20px 18px 0 18px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.sec9-img{
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    position: relative;
+}
+.sec9-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.sec9-info1{
+    margin: 25px 0 20px 0;
+}
+.sec9-info1  span{
+    margin: 0 10px ;
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+.sec9-info2{
+    margin-top: 15px;
+}
+.sec9-info2 .sec9-info2-h2{
+    padding-bottom: 25px;
+
+}
+.sec9-info2 .sec9-info2-p{
+    padding-bottom: 30px;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+}
+.sec9-info2 .sec9-info2-link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color:rgb(43, 56, 236) ;
+}
+.sec9-div:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+   background-color: rgba(0, 0, 0, 0.315);
+   border-radius: 10px;
+
+}
+
+.sec9-div:hover::after{
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.7;
+    z-index: -1;
+       
+}
+.sec9-div:hover  .sec9-info2-h2{
+    color: white;
+}
+.sec9-div:hover  .sec9-info2-p{
+    color: black;
+}
+/* ---------------------------------------------------------------------- */
+
+.sec10{
+    width: 100%;
+    height: 55%;
+    background-color: rgb(226, 225, 226);
+}
+.continer10{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    /* background-color: #6a857f; */
+}
+.sec10-img{
+    width: 40%;
+    height: 220px;
+    margin: auto;
+    
+}
+.sec10-img img{
+    border-radius: 15px;
+    margin-top: 20px;
+
+}
+.sec10-icon{
+    width: 55%;
+    height: 60px;
+    /* background-color: aliceblue; */
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+
+}
+.sec10-icon i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(43, 56, 236);
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 25px;
+    margin: 0 5px;
+    opacity: 0.5;
+
+}
+.sec10-icon i:hover{
+    opacity: 1;
+}
+.sec10-p{
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* ------------------------------------------------------------- */
